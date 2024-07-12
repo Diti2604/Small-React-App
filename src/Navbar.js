@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -6,12 +7,12 @@ function Navbar() {
       <nav className="navbar">
         <h1>The Dojo Blog</h1>
         <div className="links">
-            <a href="/">Home</a>
-            <a href="/create"  >New Blog</a>
+          <Link to="/">Home</Link>
+          <Link to="/create">New Blog</Link>
         </div>
       </nav>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
